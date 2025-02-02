@@ -7,6 +7,25 @@ This repository contains a Python implementation to solve the problem of minimiz
 
 **License:** This work is licensed under a [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
+## Citation
+
+If you use this code in your research, please consider citing it as follows:
+
+**APA Style:**
+
+Emmerich, M. T. M. (2025). *Riesz s-Energy Subset 1D* [Source code]. GitHub. https://github.com/emmerichmtm/RieszSEnergySubset1D
+
+**BibTeX:**
+
+```bibtex
+@misc{Emmerich2025RieszSEnergySubset1D,
+  author       = {Emmerich, M. T. M.},
+  title        = {Riesz s-Energy Subset 1D},
+  year         = {2025},
+  howpublished = {\url{https://github.com/emmerichmtm/RieszSEnergySubset1D}},
+  note         = {Source code},
+}
+
 ## Problem Statement
 
 Given a sorted list of points `x` (in increasing order) and a parameter `s > 0`, the goal is to select a subset `S` of `k` points that minimizes the Riesz s-energy defined by
