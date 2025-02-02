@@ -82,7 +82,7 @@ These visualizations help in understanding how the DP algorithm selects the repr
 To run any of the Python scripts, use:
 
 ```bash
-python main.py
+python dp_1d.py
 
 
 
