@@ -38,25 +38,53 @@ Emmerich, M. (2025, February 2). *Riesz s-Energy Subset 1D* [Source code]. GitHu
 }
 ```
 
+# Dynamic Programming for Riesz \(s\)-Energy Subset Selection
 
-## Problem Statement
+This repository contains implementations of dynamic programming (DP) algorithms for selecting a representative subset of points that minimizes the Riesz \(s\)-energy. In general, the Riesz \(s\)-Energy Subset Selection problem is NP hard in arbitrary dimensions (see [Pereverdieva et al., 2024](https://arxiv.org/abs/2410.18900)). However, for structured cases such as the 1-D case and the 2-D Pareto front, efficient DP schemes can be used.
 
-Given a sorted list of points `x` (in increasing order) and a parameter `s > 0`, the goal is to select a subset `S` of `k` points that minimizes the Riesz s-energy defined by
+## Overview
 
-$$
-E(S) = \sum_{p < q \in S} \frac{1}{(x[q] - x[p])^s}
-$$
+The goal is to select a subset 
+\[
+S = \{P_{i_1}, P_{i_2}, \dots, P_{i_k}\}
+\]
+from a set of \(n\) points so that the energy
+\[
+E(S)=\sum_{1\le p<q\le k}\frac{1}{d(P_{i_p},P_{i_q})^s}
+\]
+is minimized, where \(d(P, Q)\) is the Euclidean distance and \(s > 0\) is a given parameter.
 
-The code assumes that the input list `x` is strictly increasing, ensuring that all differences (gaps) are positive.
+- **1-D Case:**  
+  When the points are real numbers (sorted in increasing order), the DP algorithm exploits the monotonicity in the distances and computes the optimal subset efficiently. The code includes both the DP solution and a brute force verification to double-check optimality.
 
-## Files
+- **2-D Pareto Front:**  
+  In the biobjective setting, the points are non-dominated and sorted by increasing \(f_1\) (with decreasing \(f_2\)). A similar DP approach is applied to compute the optimal subset from the Pareto front. Again, a brute force search is available to verify the DP results.
 
-- **`main.py`**: Contains the complete implementation, including the dynamic programming and brute force methods, as well as example cases.
-- **`README.md`**: This file, which provides an overview and documentation for the project.
+## Included Code
 
-## Usage
+- **`dp_1d.py`**:  
+  Contains the implementation for the 1-D Riesz \(s\)-Energy Subset Selection problem.
 
-Ensure that you have Python 3 installed. You can run the script directly from the command line:
+- **`pareto2d.py`**:  
+  Contains the dynamic programming solution for the 2-D Pareto front case.  
+  This script computes, from a sorted non-dominated set of 2-D points, the subset that minimizes the Riesz \(s\)-energy.
+
+## TikZ Illustrations
+
+The LaTeX document provided in this repository also includes TikZ examples to illustrate:
+- A 1-D example.
+- Two 2-D examples with non-dominated points and their selected subsets.
+
+These visualizations help in understanding how the DP algorithm selects the representative subset.
+
+## Running the Code
+
+To run any of the Python scripts, use:
 
 ```bash
 python main.py
+
+
+
+```bash
+python pareto2d.py
