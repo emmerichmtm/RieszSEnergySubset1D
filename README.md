@@ -11,9 +11,9 @@ This repository contains a Python implementation to solve the problem of minimiz
 
 Given a sorted list of points `x` (in increasing order) and a parameter `s > 0`, the goal is to select a subset `S` of `k` points that minimizes the Riesz s-energy defined by
 
-\[
+$$
 E(S) = \sum_{p < q \in S} \frac{1}{(x[q] - x[p])^s}
-\]
+$$
 
 The code assumes that the input list `x` is strictly increasing, ensuring that all differences (gaps) are positive.
 
