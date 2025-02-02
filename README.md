@@ -17,14 +17,27 @@ Emmerich, M. T. M. (2025). *Riesz s-Energy Subset 1D* [Source code]. GitHub. htt
 
 **BibTeX:**
 
+## Citation
+
+If you use this code in your research, please consider citing it as follows:
+
+**APA Style:**
+
+Emmerich, M. (2025, February 2). *Riesz s-Energy Subset 1D* [Source code]. GitHub. https://github.com/emmerichmtm/RieszSEnergySubset1D
+
+**BibTeX:**
 ```bibtex
 @misc{Emmerich2025RieszSEnergySubset1D,
-  author       = {Emmerich, M. T. M.},
+  author       = {Michael Emmerich},
   title        = {Riesz s-Energy Subset 1D},
   year         = {2025},
+  month        = feb,
+  day          = {2},
   howpublished = {\url{https://github.com/emmerichmtm/RieszSEnergySubset1D}},
   note         = {Source code},
 }
+```
+
 
 ## Problem Statement
 
