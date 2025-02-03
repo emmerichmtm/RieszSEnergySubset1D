@@ -1,4 +1,4 @@
-# Minimizing Riesz s-Energy in Ordered Points
+# Minimum Riesz s-Energy Subset Selection in Ordered Point Sets
 
 This repository contains a Python implementation to solve the problem of minimizing the Riesz s-energy of a subset of points chosen from a sorted list. Two methods are provided:
 
