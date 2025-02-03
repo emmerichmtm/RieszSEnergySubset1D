@@ -15,29 +15,6 @@ If you use this code in your research, please consider citing it as follows:
 
 Emmerich, M. T. M. (2025). *Riesz s-Energy Subset 1D* [Source code]. GitHub. https://github.com/emmerichmtm/RieszSEnergySubset1D
 
-**BibTeX:**
-
-## Citation
-
-If you use this code in your research, please consider citing it as follows:
-
-**APA Style:**
-
-Emmerich, M. (2025, February 2). *Riesz s-Energy Subset 1D* [Source code]. GitHub. https://github.com/emmerichmtm/RieszSEnergySubset1D
-
-**BibTeX:**
-```bibtex
-@misc{Emmerich2025RieszSEnergySubset1D,
-  author       = {Michael Emmerich},
-  title        = {Riesz s-Energy Subset 1D},
-  year         = {2025},
-  month        = feb,
-  day          = {2},
-  howpublished = {\url{https://github.com/emmerichmtm/RieszSEnergySubset1D}},
-  note         = {Source code},
-}
-```
-
 # Dynamic Programming for Riesz \(s\)-Energy Subset Selection
 
 This repository contains implementations of dynamic programming (DP) algorithms for selecting a representative subset of points that minimizes the Riesz \(s\)-energy. In general, the Riesz \(s\)-Energy Subset Selection problem is NP hard in arbitrary dimensions (see [Pereverdieva et al., 2024](https://arxiv.org/abs/2410.18900)). However, for structured cases such as the 1-D case and the 2-D Pareto front, efficient DP schemes can be used.
@@ -81,10 +58,6 @@ These visualizations help in understanding how the DP algorithm selects the repr
 
 To run any of the Python scripts, use:
 
-```bash
 python dp_1d.py
 
-
-
-```bash
 python pareto2d.py
